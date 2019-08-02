@@ -26,7 +26,7 @@ class App extends React.Component{
 
         const lis = users.map( (user,idx) => {
             const userCards = [user.name, user.username].map((item, idx) => React.createElement('div', {key: idx}, item))
-            return React.createElement('li', {onClick: () => {toggleUser(idx)}, key: idx}, userCards) 
+            return React.createElement('li', {onClick: () => {toggleUser(idx)}, key: idx, className: user.isFavorite ? 'Favorite' : ''}, userCards) 
         } )
         const favNum = users.filter( user => user.isFavorite ).length
         const userList = React.createElement('ul', null, lis);

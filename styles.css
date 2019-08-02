@@ -1,0 +1,14 @@
+.Favorite{
+    background-color: orange
+}
+
+div > div > ul {
+    display: flex;
+    flex-direction: column;
+}
+
+div > div > ul > li {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+}
